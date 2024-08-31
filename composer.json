@@ -1,68 +1,26 @@
 {
-    "type": "project",
-    "license": "proprietary",
-    "minimum-stability": "stable",
-    "prefer-stable": true,
+    "name": "isocsoft/isocapi-sdk",
+    "description": "SDK for isocapi, a platform that provides data from popular (mostly polish) sources like OLX, Otomoto, Otodom, and Vinted. The SDK offers an easy-to-use interface for retrieving information based on keywords or other criteria. It features clear and easy to read docs to help you get started quickly and efficiently.",
+    "type": "library",
     "require": {
-        "php": ">=8.2",
-        "ext-ctype": "*",
-        "ext-iconv": "*",
-        "symfony/console": "7.0.*",
-        "symfony/dotenv": "7.0.*",
-        "symfony/flex": "^2",
-        "symfony/framework-bundle": "7.0.*",
-        "symfony/runtime": "7.0.*",
-        "symfony/yaml": "7.0.*"
+        "symfony/console": "^7.1",
+        "symfony/dependency-injection": "^7.1",
+        "symfony/http-client": "^7.1"
     },
-    "require-dev": {
-    },
-    "config": {
-        "allow-plugins": {
-            "php-http/discovery": true,
-            "symfony/flex": true,
-            "symfony/runtime": true
-        },
-        "sort-packages": true
-    },
+    "license": "MIT",
     "autoload": {
         "psr-4": {
             "App\\": "src/"
         }
     },
-    "autoload-dev": {
-        "psr-4": {
-            "App\\Tests\\": "tests/"
+    "authors": [
+        {
+            "name": "isocsoft",
+            "email": "isoc.software@gmail.com"
         }
-    },
-    "replace": {
-        "symfony/polyfill-ctype": "*",
-        "symfony/polyfill-iconv": "*",
-        "symfony/polyfill-php72": "*",
-        "symfony/polyfill-php73": "*",
-        "symfony/polyfill-php74": "*",
-        "symfony/polyfill-php80": "*",
-        "symfony/polyfill-php81": "*",
-        "symfony/polyfill-php82": "*"
-    },
-    "scripts": {
-        "auto-scripts": {
-            "cache:clear": "symfony-cmd",
-            "assets:install %PUBLIC_DIR%": "symfony-cmd"
-        },
-        "post-install-cmd": [
-            "@auto-scripts"
-        ],
-        "post-update-cmd": [
-            "@auto-scripts"
-        ]
-    },
-    "conflict": {
-        "symfony/symfony": "*"
-    },
-    "extra": {
-        "symfony": {
-            "allow-contrib": false,
-            "require": "7.0.*"
-        }
+    ],
+    "minimum-stability": "stable",
+    "require-dev": {
+        "phpunit/phpunit": "^11.3"
     }
 }
