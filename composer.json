@@ -3,7 +3,6 @@
     "description": "SDK for isocapi, a platform that provides data from popular (mostly polish) sources like OLX, Otomoto, Otodom, and Vinted. The SDK offers an easy-to-use interface for retrieving information based on keywords or other criteria. It features clear and easy to read docs to help you get started quickly and efficiently.",
     "type": "library",
     "require": {
-        "symfony/console": "^7.1",
         "symfony/dependency-injection": "^7.1",
         "symfony/http-client": "^7.1"
     },

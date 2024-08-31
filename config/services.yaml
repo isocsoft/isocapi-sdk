@@ -1,6 +1,0 @@
-services:
-  App\Service\SomeService:
-    arguments:
-      $anotherService: '@App\Service\AnotherService'
-
-  App\Service\AnotherService: ~
