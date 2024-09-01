@@ -18,13 +18,16 @@ composer require isocsoft/isocapi-sdk
     <summary><b>synchronous</b></summary> 
 
 ```php
+use Isocapi\ApiClient;
+use Isocapi\Source\Olx;
+
 $client = new ApiClient('your-isocapi-key');
 
 $response = $client->request(
     source: new Olx\AuctionsDetailsByKeyword([
         'keyword' => 'Nike',
         'page' => 1,
-    ];
+    ]);
 );
 
 return $response->toArray();
