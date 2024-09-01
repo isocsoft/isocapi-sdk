@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace App\Source\Otodom;
+namespace Isocapi\Source\Otodom;
 
-use App\Source\BaseSource;
+use Isocapi\Source\BaseSource;
 use Override;
 
 class AuctionsDetailsByKeyword extends BaseSource

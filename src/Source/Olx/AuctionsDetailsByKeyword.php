@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace App\Source\Olx;
+namespace Isocapi\Source\Olx;
 
-use App\Source\BaseSource;
+use Isocapi\Source\BaseSource;
 use Override;
 
 class AuctionsDetailsByKeyword extends BaseSource

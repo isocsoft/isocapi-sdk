@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace App\Source\Vinted;
+namespace Isocapi\Source\Vinted;
 
-use App\Source\BaseSource;
+use Isocapi\Source\BaseSource;
 use Override;
 
 class AuctionsDetailsByKeyword extends BaseSource

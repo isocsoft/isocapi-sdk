@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace App;
+namespace Isocapi;
 
-use App\Response\ResponseFactory;
-use App\Response\ResponseInterface;
-use App\Source\SourceInterface;
+use Isocapi\Response\ResponseFactory;
+use Isocapi\Response\ResponseInterface;
+use Isocapi\Source\SourceInterface;
 use Symfony\Component\HttpClient\HttpClient;
 use Symfony\Contracts\HttpClient\HttpClientInterface;
 use Symfony\Contracts\HttpClient\ResponseInterface as HttpClientResponseInterface;

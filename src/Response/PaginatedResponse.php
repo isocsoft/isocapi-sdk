@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace App\Response;
+namespace Isocapi\Response;
 
 class PaginatedResponse extends BaseResponse
 {

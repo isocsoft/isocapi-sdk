@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace App\Response;
+namespace Isocapi\Response;
 
 abstract class BaseResponse implements ResponseInterface
 {

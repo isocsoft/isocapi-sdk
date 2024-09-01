@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace App\Response;
+namespace Isocapi\Response;
 
-use App\Source\SourceInterface;
+use Isocapi\Source\SourceInterface;
 
 class ResponseFactory
 {

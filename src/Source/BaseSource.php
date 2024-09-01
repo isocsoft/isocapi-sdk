@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace App\Source;
+namespace Isocapi\Source;
 
 use Override;
 use Symfony\Component\HttpFoundation\Request;
