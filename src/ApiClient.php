@@ -38,17 +38,8 @@ class ApiClient
             options: array_merge($source->options(), $extraOptions),
         );
         return ResponseFactory::createBasedOnSource(
-            response: $this->getContent($response),
+            response: $response->getContent(),
             source: $source,
         );
-    }
-
-    private function getContent(HttpClientResponseInterface $response): string
-    {
-        try {
-            return $response->getContent();
-        } catch (Throwable) {
-            return '';
-        }
     }
 }
